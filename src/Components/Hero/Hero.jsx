@@ -2,7 +2,8 @@ import React from 'react'
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import css from '../Hero/Hero.module.scss'
-import { fadeIn, slideIn, staggerContainer } from '../../utils/motion'
+import { fadeIn, slideIn, staggerContainer } from '../../utils/motion';
+
 
 const Hero = () => {
     return (
@@ -25,6 +26,7 @@ const Hero = () => {
                 <div className={css.lowerElements}>
 
                     <motion.div variants={fadeIn("left", "tween", 0.3, 1)} className={css.person}>
+                        
                         < motion.img src="./person.png" alt="person" variants={slideIn("up", 'tween', 0.5, 1.3,)} />
                     </motion.div>
 
