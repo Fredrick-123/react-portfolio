@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 import {motion} from 'framer-motion';
 import css from '../Hero/Hero.module.scss'
 import { fadeIn, slideIn ,staggerContainer } from '../../utils/motion'
@@ -8,8 +9,16 @@ const Hero = () => {
         <section className={`paddings ${css.wrapper}`}>
             <motion.div variants={staggerContainer}  initial="hidden" whileInView="show" viewport={{once: false , amount: 0.25 }} className={`innerWidth ${css.container}`}>
 
-                <div className={css.upperElements}> <motion.span variants={fadeIn("right" , "tween" , 0.2 , 1)} className='primaryText'> Hey There,<br/>
-                    I'm Xavier. </motion.span> 
+                <div className={css.upperElements}> <motion.span variants={fadeIn("right" , "tween" , 0.2 , 1)} className='primaryText'>
+                     Hey There,<br/>
+                     <Typewriter
+  options={{
+    strings: [' I am Xavier', 'A visual designer'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+                    </motion.span> 
                     <motion.span variants={fadeIn("left" , "tween" , 0.4 , 1)}  className='secondaryText'>I design beautiful simple<br />
                         things, And I love what i do</motion.span> </div>
 
