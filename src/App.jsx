@@ -10,6 +10,7 @@ import People from "./Components/People/People";
 import Footer from "./Components/Footer/Footer";
 
 
+
 const App = () => {
   return <div className={` bg-primary ${CSS.conatiner}`}>
    <Header/> 
